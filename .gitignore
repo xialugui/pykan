@@ -5,3 +5,5 @@ docs/_static/
 docs/_templates
 folder
 test
+.idea
+/figures/**

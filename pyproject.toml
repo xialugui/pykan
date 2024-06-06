@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "pykan"
+version = "0.1.0"
+description = ""
+authors = ["xialugui <xialugui@139.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+matplotlib = "^3.9.0"
+numpy = "^1.26.4"
+scikit-learn = "^1.5.0"
+sympy = "^1.12.1"
+torch = "^2.3.0"
+tqdm = "^4.66.4"
+jupyter = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "ali"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+priority = "primary"
