@@ -1665,6 +1665,30 @@ url = "https://mirrors.aliyun.com/pypi/simple"
 reference = "ali"
 
 [[package]]
+name = "lazy-loader"
+version = "0.4"
+description = "Makes it easy to load subpackages and functions on demand."
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "lazy_loader-0.4-py3-none-any.whl", hash = "sha256:342aa8e14d543a154047afb4ba8ef17f5563baad3fc610d7b15b213b0f119efc"},
+    {file = "lazy_loader-0.4.tar.gz", hash = "sha256:47c75182589b91a4e1a85a136c074285a5ad4d9f39c63e0d7fb76391c4574cd1"},
+]
+
+[package.dependencies]
+packaging = "*"
+
+[package.extras]
+dev = ["changelist (==0.5)"]
+lint = ["pre-commit (==3.7.0)"]
+test = ["pytest (>=7.4)", "pytest-cov (>=4.1)"]
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "ali"
+
+[[package]]
 name = "markupsafe"
 version = "2.1.5"
 description = "Safely add untrusted strings to HTML/XML markup."
@@ -1847,6 +1871,78 @@ files = [
 [package.dependencies]
 intel-openmp = "==2021.*"
 tbb = "==2021.*"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "ali"
+
+[[package]]
+name = "mne"
+version = "1.7.0"
+description = "MNE-Python project for MEG and EEG data analysis."
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "mne-1.7.0-py3-none-any.whl", hash = "sha256:dd3e0b13748b000d11b841316d7f544a1b16af611df80ac2bfe6ade6b8b92fa6"},
+    {file = "mne-1.7.0.tar.gz", hash = "sha256:a6c8fce601e3b3559875825f527da7c72dbd19fcb9d206692f94c98ae5f0fce0"},
+]
+
+[package.dependencies]
+decorator = "*"
+jinja2 = "*"
+lazy-loader = ">=0.3"
+matplotlib = ">=3.5.0"
+numpy = ">=1.21.2"
+packaging = "*"
+pooch = ">=1.5"
+scipy = ">=1.7.1"
+tqdm = "*"
+
+[package.extras]
+dev = ["codespell", "graphviz", "ipython (!=8.7.0)", "memory-profiler", "mne-bids", "mne-connectivity", "mne-gui-addons", "mypy", "neo", "numpydoc", "pre-commit", "pydata-sphinx-theme (==0.15.2)", "pygments (>=2.13)", "pytest", "pytest (>=8.0.0rc2)", "pytest-cov", "pytest-qt", "pytest-timeout", "pyxdf", "pyzmq (!=24.0.0)", "rcssmin", "ruff", "seaborn (!=0.11.2)", "selenium", "sphinx (>=6,<7.3)", "sphinx-copybutton", "sphinx-design", "sphinx-gallery", "sphinxcontrib-bibtex (>=2.5)", "sphinxcontrib-towncrier", "sphinxcontrib-youtube", "tomli", "twine", "wheel"]
+doc = ["graphviz", "ipython (!=8.7.0)", "memory-profiler", "mne-bids", "mne-connectivity", "mne-gui-addons", "neo", "numpydoc", "pydata-sphinx-theme (==0.15.2)", "pygments (>=2.13)", "pytest", "pyxdf", "pyzmq (!=24.0.0)", "seaborn (!=0.11.2)", "selenium", "sphinx (>=6,<7.3)", "sphinx-copybutton", "sphinx-design", "sphinx-gallery", "sphinxcontrib-bibtex (>=2.5)", "sphinxcontrib-towncrier", "sphinxcontrib-youtube"]
+full = ["darkdetect", "defusedxml", "dipy", "edfio (>=0.2.1)", "eeglabio", "h5io", "h5py", "imageio (>=2.6.1)", "imageio-ffmpeg (>=0.4.1)", "ipyevents", "ipympl", "ipywidgets", "joblib", "jupyter", "mffpy (>=0.5.7)", "mne-qt-browser", "neo", "nibabel", "nilearn", "numba", "openmeeg (>=2.5.5)", "pandas", "psutil", "pyarrow", "pybv", "pymatreader", "pyobjc-framework-cocoa (>=5.2.0)", "pyqt6 (!=6.6.1)", "pyqt6-qt6 (!=6.6.1,!=6.6.2,!=6.6.3)", "python-picard", "pyvista (>=0.32,!=0.35.2,!=0.38.0,!=0.38.1,!=0.38.2,!=0.38.3,!=0.38.4,!=0.38.5,!=0.38.6,!=0.42.0)", "pyvistaqt (>=0.4)", "qdarkstyle (!=3.2.2)", "qtpy", "scikit-learn", "sip", "snirf", "statsmodels", "threadpoolctl", "traitlets", "trame", "trame-vtk", "trame-vuetify", "vtk", "xlrd"]
+hdf5 = ["h5io", "pymatreader"]
+test = ["codespell", "mypy", "numpydoc", "pre-commit", "pytest (>=8.0.0rc2)", "pytest-cov", "pytest-qt", "pytest-timeout", "ruff", "tomli", "twine", "wheel"]
+test-extra = ["codespell", "edfio (>=0.2.1)", "eeglabio", "imageio (>=2.6.1)", "imageio-ffmpeg (>=0.4.1)", "mne-bids", "mypy", "nbclient", "neo", "nitime", "numpydoc", "pre-commit", "pybv", "pytest (>=8.0.0rc2)", "pytest-cov", "pytest-qt", "pytest-timeout", "ruff", "snirf", "sphinx-gallery", "statsmodels", "tomli", "twine", "wheel"]
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "ali"
+
+[[package]]
+name = "mne-icalabel"
+version = "0.6.0"
+description = "MNE-ICALabel: Automatic labeling of ICA components from MEG, EEG and iEEG data with MNE."
+optional = false
+python-versions = "~=3.9"
+files = [
+    {file = "mne-icalabel-0.6.0.tar.gz", hash = "sha256:5636235e00a97fce1ac62581e16144ff19ad56723736ffe5f5876b4fae2b96fa"},
+    {file = "mne_icalabel-0.6.0-py3-none-any.whl", hash = "sha256:24f9dea64473274155b4d149f49e640a16069fd02a8389e34e33efd3237db642"},
+]
+
+[package.dependencies]
+mne = ">=1.2"
+numpy = ">=1.21"
+packaging = "*"
+pooch = "*"
+psutil = "*"
+scipy = ">=1.4.0"
+
+[package.extras]
+all = ["mne-icalabel[build]", "mne-icalabel[doc]", "mne-icalabel[gui]", "mne-icalabel[ica]", "mne-icalabel[onnx]", "mne-icalabel[stubs]", "mne-icalabel[style]", "mne-icalabel[test]", "mne-icalabel[torch]"]
+build = ["build", "twine"]
+doc = ["PyQt6", "memory-profiler", "mne-icalabel[gui]", "mne-icalabel[ica]", "mne-icalabel[onnx]", "numpydoc", "pydata-sphinx-theme (==0.14.1)", "sphinx", "sphinx-copybutton", "sphinx-design", "sphinx-gallery", "sphinx-issues", "sphinxcontrib-bibtex"]
+full = ["mne-icalabel[all]"]
+gui = ["matplotlib", "mne-qt-browser (>=0.6.0)", "qtpy"]
+ica = ["joblib", "python-picard", "scikit-learn"]
+onnx = ["onnxruntime"]
+stubs = ["PyQt6", "isort", "mne-icalabel[gui]", "mne-icalabel[onnx]", "mne-icalabel[torch]", "mypy", "ruff (>=0.1.8)"]
+style = ["bibclean", "codespell[toml] (>=2.2.4)", "isort", "pydocstyle[toml]", "ruff (>=0.1.13)", "toml-sort", "yamllint"]
+test = ["PyQt6", "mne-bids (>=0.14)", "mne-icalabel[gui]", "mne-icalabel[ica]", "mne-icalabel[onnx]", "mne-icalabel[torch]", "pandas", "pymatreader", "pytest", "pytest-cov"]
+torch = ["torch"]
 
 [package.source]
 type = "legacy"
@@ -2524,6 +2620,32 @@ files = [
 [package.extras]
 dev = ["pre-commit", "tox"]
 testing = ["pytest", "pytest-benchmark"]
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = "ali"
+
+[[package]]
+name = "pooch"
+version = "1.8.2"
+description = "A friend to fetch your data files"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "pooch-1.8.2-py3-none-any.whl", hash = "sha256:3529a57096f7198778a5ceefd5ac3ef0e4d06a6ddaf9fc2d609b806f25302c47"},
+    {file = "pooch-1.8.2.tar.gz", hash = "sha256:76561f0de68a01da4df6af38e9955c4c9d1a5c90da73f7e40276a5728ec83d10"},
+]
+
+[package.dependencies]
+packaging = ">=20.0"
+platformdirs = ">=2.5.0"
+requests = ">=2.19.0"
+
+[package.extras]
+progress = ["tqdm (>=4.41.0,<5.0.0)"]
+sftp = ["paramiko (>=2.7.0)"]
+xxhash = ["xxhash (>=1.4.3)"]
 
 [package.source]
 type = "legacy"
@@ -3799,4 +3921,4 @@ reference = "ali"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "c0eb4c929b1e15965e9225e649761cbbaebcd7968da6dd5b59277efcef173257"
+content-hash = "78cd477a33850844d350c4a86e3181c617aa78ddfbd6ba80f168be2092612890"
